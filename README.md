@@ -44,4 +44,4 @@ Each company is a top-level entry:
 
 ## License
 
-Data and code are public domain. The model names belong to their respective companies, who should probably hire a naming consultant.
+[MIT](LICENSE). The model names belong to their respective companies, who should probably hire a naming consultant.
