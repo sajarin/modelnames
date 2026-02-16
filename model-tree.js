@@ -104,9 +104,15 @@ class ModelTree extends HTMLElement {
 
     // date
     if (node.date) {
-      const d = document.createElement('span');
+      const d = document.createElement(node.url ? 'a' : 'span');
       d.className = 'n-date';
       d.textContent = node.date;
+      if (node.url) {
+        d.href = node.url;
+        d.target = '_blank';
+        d.rel = 'noopener';
+        d.addEventListener('click', e => e.stopPropagation());
+      }
       n.appendChild(d);
     }
 

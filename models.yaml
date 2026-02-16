@@ -8,12 +8,15 @@
       children:
         - name: GPT-1
           date: "Jun 2018"
+          url: "https://openai.com/index/language-unsupervised/"
           tip: "<strong>117M parameters.</strong> 'Improving Language Understanding by Generative Pre-Training.' Nobody noticed."
         - name: GPT-2
           date: "Feb 2019"
+          url: "https://openai.com/index/better-language-models/"
           tip: "<strong>1.5B parameters.</strong> OpenAI initially refused to release it, fearing misuse. Released in stages over 9 months."
         - name: GPT-3
           date: "Jun 2020"
+          url: "https://openai.com/index/gpt-3-apps/"
           tip: "<strong>175B parameters.</strong> First model available via API. Introduced the scientist-name size tiers."
           children:
             - name: Ada
@@ -31,10 +34,12 @@
             - name: Codex
               dead: true
               date: "Aug 2021"
+              url: "https://openai.com/index/openai-codex/"
               tip: "<strong>GPT-3 fine-tuned on code.</strong> Powered GitHub Copilot. API model IDs like code-davinci-002. Discontinued in Mar 2023... then the name came back in 2025."
             - name: InstructGPT
               dead: true
               date: "Jan 2022"
+              url: "https://openai.com/index/instruction-following/"
               tip: "First RLHF-trained models. Included text-davinci-002 and text-davinci-003. The naming got weird fast."
         - name: GPT-3.5
           date: "Mar 2022"
@@ -43,6 +48,7 @@
           children:
             - name: ChatGPT
               date: "Nov 2022"
+              url: "https://openai.com/index/chatgpt/"
               tip: "<strong>GPT-3.5-turbo under the hood.</strong> 100M users in 2 months. Not actually a model name. It's a product name wrapping a model name."
             - name: gpt-3.5-turbo-0301
               date: "Mar 2023"
@@ -58,14 +64,17 @@
               tip: "Final 3.5-turbo snapshot. 50% cheaper. Soon to be replaced by GPT-4o mini."
         - name: GPT-4
           date: "Mar 2023"
+          url: "https://openai.com/index/gpt-4/"
           tip: "<strong>The flagship.</strong> Multimodal capabilities. Still the base version number for multiple parallel product lines years later."
           children:
             - name: GPT-4V
               date: "Sep 2023"
               note: '"V" for Vision'
+              url: "https://openai.com/index/gpt-4v-system-card/"
               tip: "Vision capabilities added. The suffix 'V' was used exactly once and never again."
             - name: GPT-4 Turbo
               date: "Nov 2023"
+              url: "https://openai.com/index/new-models-and-developer-products-announced-at-devday/"
               tip: "<strong>128K context, cheaper pricing.</strong> DevDay launch. Multiple preview snapshots before the stable release."
               children:
                 - name: gpt-4-1106-preview
@@ -80,14 +89,17 @@
             - name: GPT-4o
               date: "May 2024"
               note: '"o" = omni, not zero'
+              url: "https://openai.com/index/hello-gpt-4o/"
               tip: "<strong>\"o\" stands for \"omni.\"</strong> Native multimodal model (text, audio, image). Not \"GPT-four-oh\" or \"GPT-four-zero.\" Omni. Everyone still calls it \"four oh.\""
               children:
                 - name: GPT-4o mini
                   date: "Jul 2024"
+                  url: "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
                   tip: "<strong>Replaced GPT-3.5-turbo.</strong> 60% cheaper. Introduced the 'mini' suffix to GPT naming. The beginning of the size-suffix era."
         - name: GPT-4.1
           date: "Apr 2025"
           note: "released AFTER GPT-5 was announced"
+          url: "https://openai.com/index/gpt-4-1/"
           tip: "<strong>A model called 4.1 that exists after 5.</strong> Optimized for coding with 1M token context. Introduced 'nano' size tier. A separate product line from GPT-5."
           children:
             - name: GPT-4.1 mini
@@ -97,6 +109,7 @@
               tip: "Smallest 4.1 model. OpenAI borrowed 'nano' from Google's Gemini naming."
         - name: GPT-5
           date: "Aug 2025"
+          url: "https://openai.com/index/introducing-gpt-5/"
           tip: "<strong>Router system with fast and reasoning modes.</strong> 400K context. 45% fewer hallucinations. $1.25/M input tokens."
           children:
             - name: GPT-5 Pro
@@ -115,6 +128,7 @@
               tip: "<strong>'Max' is the new size tier.</strong> Apple uses 'Max' for chips. OpenAI uses it for code models. Words are running out."
         - name: GPT-5.2
           date: "2025"
+          url: "https://openai.com/index/introducing-gpt-5-2/"
           tip: "<strong>Latest GPT generation.</strong> Now with Chat, Pro, and Codex sub-variants. Three product lines within a point release."
           children:
             - name: GPT-5.2 Chat
@@ -127,11 +141,13 @@
         - name: GPT-5.3-Codex
           date: "Jan 2026"
           note: "most capable agentic coding model"
+          url: "https://openai.com/index/introducing-gpt-5-3-codex/"
           tip: "<strong>Combines Codex + GPT-5 training stacks.</strong> New industry highs on SWE-Bench Pro. ~25% faster than predecessors. The Codex zombie brand is now the flagship."
           children:
             - name: GPT-5.3-Codex-Spark
               date: "Feb 2026"
               note: "runs on Cerebras hardware"
+              url: "https://openai.com/index/introducing-gpt-5-3-codex-spark/"
               tip: "<strong>Ultra-fast variant.</strong> 1000+ tokens/sec on Cerebras WSE-3 chips. 'Spark' is the new size tier. Not Mini, not Nano, not Max — Spark."
     - name: Open Source
       section: true
@@ -141,6 +157,7 @@
         - name: gpt-oss-120b
           date: "2025"
           note: "Apache 2.0 from OPENAI"
+          url: "https://openai.com/index/introducing-gpt-oss/"
           tip: "<strong>OpenAI's first open-source model.</strong> 120B params under Apache 2.0. The company that once refused to release GPT-2 now ships open weights."
         - name: gpt-oss-20b
           date: "2025"
@@ -152,6 +169,7 @@
       children:
         - name: o1
           date: "Sep 2024"
+          url: "https://openai.com/index/introducing-openai-o1-preview/"
           tip: "<strong>First reasoning model.</strong> Chain-of-thought visible in special 'thinking' blocks. Released as o1-preview initially."
           children:
             - name: o1-preview
@@ -167,10 +185,12 @@
           tip: "<strong>Does not exist.</strong> Skipped because O2 (Telefónica) is a major European telecom brand."
         - name: o3
           date: "Apr 2025"
+          url: "https://openai.com/index/introducing-o3-and-o4-mini/"
           tip: "Jumped straight from o1 to o3. Because o2 was taken by a phone company."
           children:
             - name: o3-mini
               date: "Jan 2025"
+              url: "https://openai.com/index/openai-o3-mini/"
               tip: "<strong>First reasoning model for free-tier users.</strong> Three effort levels: low, medium, high. Released before o3 itself."
             - name: o3-pro
               date: "Jun 2025"
@@ -178,6 +198,7 @@
         - name: o4-mini
           date: "Apr 2025"
           note: "there is no o4, only o4-mini"
+          url: "https://openai.com/index/introducing-o3-and-o4-mini/"
           tip: "<strong>There is no regular o4.</strong> Only o4-mini exists. The 'mini' came without the full version. Like releasing iPhone 16 mini without the iPhone 16."
     - name: Media & Audio
       section: true
@@ -185,16 +206,20 @@
       children:
         - name: "DALL\xB7E"
           date: "Jan 2021"
+          url: "https://openai.com/index/dall-e/"
           tip: "<strong>Text-to-image generation.</strong> Named as a portmanteau of WALL-E and Salvador Dal\xED."
           children:
             - name: "DALL\xB7E 2"
               date: "Apr 2022"
+              url: "https://openai.com/index/dall-e-2/"
               tip: "Higher resolution, more realistic. Public beta Jul 2022."
             - name: "DALL\xB7E 3"
               date: "Sep 2023"
+              url: "https://openai.com/index/dall-e-3/"
               tip: "Better prompt following. Better hands. Integrated into ChatGPT."
         - name: Sora
           date: "Feb 2024"
+          url: "https://openai.com/index/sora/"
           tip: "<strong>Text-to-video.</strong> Up to 6 seconds initially. Named after the Japanese word for sky."
           children:
             - name: Sora 2
@@ -202,6 +227,7 @@
               tip: "15-25 second videos. Sound effects. iOS app. 'Cameo' feature."
         - name: Whisper
           date: "2022"
+          url: "https://openai.com/index/whisper/"
           tip: "<strong>General-purpose speech recognition.</strong> Open-sourced. Relatively sane naming."
           children:
             - name: Whisper V2
@@ -220,6 +246,7 @@
         - name: Jukebox
           dead: true
           date: "Apr 2020"
+          url: "https://openai.com/index/jukebox/"
           tip: "Music generation. Quietly forgotten."
     - name: Embeddings
       section: true
@@ -230,9 +257,11 @@
           tip: "Named after the GPT-3 'Ada' tier. Embedding models kept the scientist names longer than anyone."
         - name: text-embedding-3-small
           date: "Jan 2024"
+          url: "https://openai.com/index/new-embedding-models-and-api-updates/"
           tip: "Finally dropped the scientist names. 5x cheaper."
         - name: text-embedding-3-large
           date: "Jan 2024"
+          url: "https://openai.com/index/new-embedding-models-and-api-updates/"
           tip: "Best performance tier."
 
 # ─────────────────── GOOGLE ───────────────────
@@ -247,6 +276,7 @@
       children:
         - name: AlphaGo
           date: "Oct 2015"
+          url: "https://deepmind.google/research/breakthroughs/alphago/"
           tip: "<strong>Defeated European Go champion Fan Hui.</strong> Started the 'Alpha' naming convention that DeepMind still uses a decade later."
           children:
             - name: AlphaGo Zero
@@ -257,6 +287,7 @@
               tip: "Generalized to chess, shogi, and Go. Dropped the game-specific name."
         - name: AlphaFold
           date: "Dec 2018"
+          url: "https://deepmind.google/discover/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/"
           tip: "<strong>Protein structure prediction.</strong> Won CASP13."
           children:
             - name: AlphaFold 2
@@ -267,21 +298,27 @@
               tip: "Expanded to DNA, RNA, ligands."
         - name: AlphaStar
           date: "Jan 2019"
+          url: "https://deepmind.google/research/breakthroughs/alphastar/"
           tip: "StarCraft II AI. Reached Grandmaster (top 0.2%)."
         - name: AlphaCode
           date: "2022"
+          url: "https://deepmind.google/blog/competitive-programming-with-alphacode/"
           tip: "Competitive programming. 54th percentile on Codeforces."
         - name: AlphaTensor
           date: "Oct 2022"
+          url: "https://deepmind.google/blog/discovering-novel-algorithms-with-alphatensor/"
           tip: "Discovered efficient matrix multiplication algorithms."
         - name: AlphaDev
           date: "Jun 2023"
+          url: "https://deepmind.google/blog/alphadev-discovers-faster-sorting-algorithms/"
           tip: "Faster sorting and hashing algorithms."
         - name: AlphaProof
           date: "Jul 2024"
+          url: "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/"
           tip: "<strong>IMO silver medal (28/42 points).</strong> Combined with AlphaGeometry 2."
         - name: AlphaGeometry
           date: "Jan 2024"
+          url: "https://deepmind.google/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/"
           tip: "Olympiad-level geometry."
           children:
             - name: AlphaGeometry 2
@@ -294,15 +331,18 @@
         - name: LaMDA
           dead: true
           date: "May 2021"
+          url: "https://blog.google/technology/ai/lamda/"
           tip: "<strong>Language Model for Dialogue Applications.</strong> 137B params. An engineer claimed it was sentient (Jun 2022). Not 'Lambda'. It's 'LaMDA.'"
         - name: PaLM
           dead: true
           date: "Apr 2022"
+          url: "https://research.google/blog/pathways-language-model-palm-scaling-to-540-billion-parameters-for-breakthrough-performance/"
           tip: "<strong>Pathways Language Model.</strong> 540B params. 'PaLM' not 'Palm.'"
           children:
             - name: PaLM 2
               dead: true
               date: "May 2023"
+              url: "https://blog.google/technology/ai/google-palm-2-ai-large-language-model/"
               tip: "Successor. Powered Bard and 25+ Google products. Four sizes with animal names."
               children:
                 - name: Gecko
@@ -329,9 +369,11 @@
           dead: true
           date: "Mar 2023"
           note: "rebranded after 11 months"
+          url: "https://blog.google/technology/ai/bard-google-ai-search-updates/"
           tip: "<strong>Google's ChatGPT competitor.</strong> Launch demo error about James Webb Telescope wiped $100B from Google's market cap. Renamed to 'Gemini' in Feb 2024."
         - name: Gemini 1.0
           date: "Dec 2023"
+          url: "https://blog.google/technology/ai/google-gemini-ai/"
           tip: "<strong>Announced as successor to everything.</strong> Three tiers with completely new names."
           children:
             - name: Nano
@@ -344,6 +386,7 @@
         - name: Gemini 1.5
           date: "Feb 2024"
           note: "skipped 1.1 through 1.4"
+          url: "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/"
           tip: "<strong>1M token context window.</strong> Jumped from 1.0 to 1.5. The half-version era begins."
           children:
             - name: Pro
@@ -358,6 +401,7 @@
         - name: Gemini 2.0
           date: "Dec 2024"
           note: "skipped 1.6 through 1.9"
+          url: "https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/"
           tip: "<strong>Experimental first, then GA.</strong> Flash-first launch. No Pro or Ultra."
           children:
             - name: Flash
@@ -387,6 +431,7 @@
         - name: Gemini 3
           date: "Nov 2025"
           note: "skipped 2.6 through 2.9"
+          url: "https://blog.google/products/gemini/gemini-3/"
           tip: "<strong>Tops LMArena (1501 Elo).</strong> PhD-level reasoning."
           children:
             - name: Pro Preview
@@ -405,17 +450,21 @@
         - name: Gemma
           date: "Feb 2024"
           note: "sounds like Gemini, is not Gemini"
+          url: "https://blog.google/technology/developers/gemma-open-models/"
           tip: "<strong>Open-source lightweight models.</strong> Built from Gemini tech but completely separate. The name similarity is actively confusing."
           children:
             - name: Gemma 2
               date: "Jun 2024"
+              url: "https://blog.google/technology/developers/google-gemma-2/"
               tip: "2B, 9B, 27B sizes."
             - name: Gemma 3
               date: "Mar 2025"
+              url: "https://blog.google/technology/developers/gemma-3/"
               tip: "1B, 4B, 12B, 27B. 140+ languages."
             - name: Gemma 3n
               date: "Jun 2025"
               note: "\"n\" for nano? for on-device?"
+              url: "https://deepmind.google/models/gemma/gemma-3n/"
               tip: "<strong>On-device variant.</strong> Runs on phones. The 'n' suffix is never explained. Not to be confused with Gemini Nano."
     - name: Media
       section: true
@@ -465,6 +514,7 @@
           children:
             - name: Genie 3
               date: "Aug 2025"
+              url: "https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/"
               tip: "Real-time 24fps, 720p, several minutes."
 
 # ─────────────────── ANTHROPIC ───────────────────
@@ -474,6 +524,7 @@
   children:
     - name: Claude 1
       date: "Mar 2023"
+      url: "https://www.anthropic.com/news/introducing-claude"
       tip: "<strong>First Claude.</strong> Available to selected users only."
       children:
         - name: Claude Instant 1
@@ -482,16 +533,20 @@
         - name: Claude Instant 1.2
           dead: true
           date: "Aug 2023"
+          url: "https://www.anthropic.com/news/releasing-claude-instant-1-2"
           tip: "Improved math and coding."
     - name: Claude 2
       date: "Jul 2023"
+      url: "https://www.anthropic.com/news/claude-2"
       tip: "<strong>First publicly available Claude.</strong>"
       children:
         - name: Claude 2.1
           date: "Nov 2023"
+          url: "https://www.anthropic.com/news/claude-2-1"
           tip: "200K token context window."
     - name: Claude 3
       date: "Mar 2024"
+      url: "https://www.anthropic.com/news/claude-3-family"
       tip: "<strong>Introduced the poetry tier system.</strong> Haiku (small) / Sonnet (medium) / Opus (large). Each named after a poetic form, ordered by length."
       children:
         - name: Haiku
@@ -502,6 +557,7 @@
           tip: "<strong>Largest, most capable.</strong> Named after a major musical/literary work. Big work = big model."
     - name: Claude 3.5
       date: "Jun 2024"
+      url: "https://www.anthropic.com/news/claude-3-5-sonnet"
       tip: "Half-version. Only Sonnet and Haiku shipped."
       children:
         - name: Sonnet
@@ -510,6 +566,7 @@
           children:
             - name: Sonnet (Oct update)
               date: "Oct 2024"
+              url: "https://www.anthropic.com/news/3-5-models-and-computer-use"
               tip: "Updated version. Same name. Different model ID date stamp. Introduced 'computer use' capability."
         - name: Haiku
           date: "Oct 2024"
@@ -524,9 +581,11 @@
     - name: Claude 3.7 Sonnet
       date: "Feb 2025"
       note: "jumped 3.5 to 3.7, Sonnet only"
+      url: "https://www.anthropic.com/news/claude-3-7-sonnet"
       tip: "<strong>First hybrid reasoning model.</strong> Visible thinking. Only Sonnet. No Haiku, no Opus. Version 3.7 exists between 3.5 and 4."
     - name: Claude 4
       date: "May 2025"
+      url: "https://www.anthropic.com/news/claude-4"
       tip: "Major version bump. No Haiku 4."
       children:
         - name: Sonnet 4
@@ -539,6 +598,7 @@
           tip: "<strong>No Haiku 4.</strong> Haiku skips from 3.5 to 4.5."
     - name: Claude 4.5
       date: "Sep 2025"
+      url: "https://www.anthropic.com/news/claude-sonnet-4-5"
       tip: "All three tiers return."
       children:
         - name: Sonnet 4.5
@@ -546,11 +606,14 @@
         - name: Haiku 4.5
           date: "Oct 2025"
           note_dim: "Haiku is back from the dead"
+          url: "https://www.anthropic.com/news/claude-haiku-4-5"
         - name: Opus 4.5
           date: "Nov 2025"
+          url: "https://www.anthropic.com/news/claude-opus-4-5"
     - name: Claude Opus 4.6
       date: "Feb 2026"
       note: "just Opus. no Sonnet, no Haiku."
+      url: "https://www.anthropic.com/news/claude-opus-4-6"
       tip: "<strong>Current model.</strong> 1M token context (beta). Introduces 'agent teams' — agents that spawn sub-agents. Found 500+ zero-day vulnerabilities during testing. Only Opus at this version. The tier system is now intermittent."
 
 # ─────────────────── DEEPSEEK ───────────────────
@@ -560,32 +623,40 @@
   children:
     - name: DeepSeek Coder
       date: "Nov 2023"
+      url: "https://github.com/deepseek-ai/DeepSeek-Coder"
       tip: "<strong>Code-focused model.</strong> 1.3B to 33B params. Open-source."
       children:
         - name: DeepSeek Coder V2
           date: "Jun 2024"
+          url: "https://github.com/deepseek-ai/DeepSeek-Coder-V2"
           tip: "236B total params. Mixture of Experts."
     - name: DeepSeek-V2
       date: "May 2024"
+      url: "https://github.com/deepseek-ai/DeepSeek-V2"
       tip: "<strong>236B params (21B active).</strong> MoE architecture. The 'V' prefix for the general model, 'R' for reasoning. At least it's a system."
       children:
         - name: DeepSeek-V2.5
           date: "Sep 2024"
+          url: "https://api-docs.deepseek.com/news/news1210"
           tip: "Merged chat and coder capabilities."
     - name: DeepSeek-V3
       date: "Dec 2024"
+      url: "https://api-docs.deepseek.com/news/news1226"
       tip: "<strong>671B params (37B active).</strong> Trained for $5.6M, a fraction of what competitors spent."
       children:
         - name: DeepSeek-V3-0324
           date: "Mar 2025"
           note: "date-stamped snapshot"
+          url: "https://api-docs.deepseek.com/news/news250325"
           tip: "Improved post-training pipeline with RL from R1. The date-stamp naming borrowed from OpenAI."
         - name: DeepSeek-V3.1
           date: "Aug 2025"
           note: "hybrid V3 + R1"
+          url: "https://api-docs.deepseek.com/news/news250821"
           tip: "<strong>Hybrid model combining V3 and R1.</strong> 671B params, 37B active. Hybrid 'thinking/non-thinking' modes. The V and R tracks merge."
         - name: DeepSeek-V3.2
           date: "2025"
+          url: "https://api-docs.deepseek.com/news/news251201"
           tip: "<strong>Updated V3.</strong> Improved reasoning and coding."
           children:
             - name: DeepSeek-V3.2 Speciale
@@ -594,6 +665,7 @@
     - name: DeepSeek-R1
       date: "Jan 2025"
       note: "named like a German sedan"
+      url: "https://api-docs.deepseek.com/news/news250120"
       tip: "<strong>Reasoning model.</strong> Matched or exceeded OpenAI o1 at 95% lower cost. The 'R' = Reasoning. R1-Zero was trained with pure RL, no supervised fine-tuning."
       children:
         - name: R1-Zero
@@ -608,9 +680,11 @@
           tip: "Distilled into Alibaba's Qwen 32B."
     - name: Janus-Pro
       date: "Jan 2025"
+      url: "https://github.com/deepseek-ai/Janus"
       tip: "<strong>Multimodal model.</strong> Unified vision understanding and generation. Separate from the V/R naming tracks."
     - name: DeepSeek-Prover
       date: "Aug 2024"
+      url: "https://github.com/deepseek-ai/DeepSeek-Prover-V1.5"
       tip: "<strong>Math theorem proving.</strong> Formal mathematics. Yet another naming track."
       children:
         - name: DeepSeek-Prover-V1.5
@@ -624,10 +698,12 @@
     - name: LLaMA
       date: "Feb 2023"
       note: "Large Language Model Meta AI, note the caps"
+      url: "https://ai.meta.com/blog/large-language-model-llama-meta-ai/"
       tip: "<strong>65B parameters.</strong> 'LLaMA' with specific capitalization because it's an acronym: Large Language Model Meta AI. This styling lasted one version."
     - name: Llama 2
       date: "Jul 2023"
       note: "lowercase now, acronym abandoned"
+      url: "https://ai.meta.com/llama/"
       tip: "<strong>Now just 'Llama'.</strong> A regular word. Partnership with Microsoft. Open-source."
       children:
         - name: Llama 2 7B
@@ -636,12 +712,14 @@
         - name: Llama 2 70B
     - name: Llama 3
       date: "Apr 2024"
+      url: "https://ai.meta.com/blog/meta-llama-3/"
       tip: "<strong>8B and 70B.</strong> First multimodal capabilities."
       children:
         - name: Llama 3 8B
         - name: Llama 3 70B
         - name: Llama 3.1
           date: "Jul 2024"
+          url: "https://ai.meta.com/blog/meta-llama-3-1/"
           tip: "<strong>Added 405B, largest open model at the time.</strong>"
           children:
             - name: Llama 3.1 8B
@@ -651,12 +729,14 @@
         - name: Llama 3.2
           date: "Oct 2024"
           note_dim: "first fully multimodal LLM from Meta"
+          url: "https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/"
         - name: Llama 3.3
           date: "Dec 2024"
           tip: "70B only. Claimed 405B-level performance."
     - name: Llama 4
       date: "Apr 2025"
       note: "parameter counts replaced by codenames"
+      url: "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
       tip: "<strong>New MoE architecture.</strong> Dropped parameter-count naming for military-style codenames. Because that's less confusing."
       children:
         - name: Scout
@@ -669,6 +749,7 @@
           tip: "<strong>288B active / ~2T total.</strong> 16 experts. Announced alongside Scout and Maverick but was 'still in training.' As of Feb 2026 it remains unreleased."
     - name: LlamaGuard
       date: "Dec 2023"
+      url: "https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/"
       tip: "<strong>Safety classification model.</strong> Input/output content moderation. Not a chat model. A bouncer."
       children:
         - name: LlamaGuard 2
@@ -686,10 +767,12 @@
       children:
         - name: Mistral 7B
           date: "Sep 2023"
+          url: "https://mistral.ai/news/announcing-mistral-7b/"
           tip: "<strong>Debut model.</strong> 7.3B params. Apache 2.0 license. Punched above its weight."
         - name: Mixtral 8x7B
           date: "Dec 2023"
           note: "\"Mix\" + \"-tral.\" it begins."
+          url: "https://mistral.ai/news/mixtral-of-experts/"
           tip: "<strong>Sparse Mixture-of-Experts.</strong> 8 experts \xD7 7B each. 6x faster inference. The portmanteau naming era begins."
         - name: Mistral Small
           tip: "Evolved through multiple versions."
@@ -712,6 +795,7 @@
           children:
             - name: Large
               date: "Feb 2024"
+              url: "https://mistral.ai/news/mistral-large/"
               tip: "First commercial model."
             - name: Large 2
               date: "Jul 2024"
@@ -726,12 +810,14 @@
       children:
         - name: Codestral
           date: "Jul 2024"
+          url: "https://mistral.ai/news/codestral"
           tip: "<strong>Code generation.</strong> Code + stral = Codestral."
         - name: Codestral 2501
           date: "Jan 2025"
           tip: "Updated code model. The '2501' is a date: January 2025. Yet another date format."
         - name: Pixtral 12B
           date: "Sep 2024"
+          url: "https://mistral.ai/news/pixtral-12b/"
           tip: "<strong>Vision model.</strong> Pix(el) + stral = Pixtral. ID: pixtral-12b-2409 (Sept 2024)."
           children:
             - name: Pixtral Large
@@ -739,15 +825,18 @@
               tip: "124B params. Large multimodal."
         - name: Mathstral
           date: "Jul 2024"
+          url: "https://mistral.ai/news/mathstral/"
           tip: "<strong>Math.</strong> Math + stral. You see the pattern."
         - name: Ministral
           date: "Oct 2024"
+          url: "https://mistral.ai/news/ministraux/"
           tip: "<strong>Edge/small models.</strong> Mini + stral."
           children:
             - name: Ministral 3B
             - name: Ministral 8B
         - name: Magistral
           date: "Jun 2025"
+          url: "https://mistral.ai/news/magistral/"
           tip: "<strong>Reasoning models.</strong> Magist(rate) + stral? Mag(nificent) + stral? Nobody knows."
           children:
             - name: Magistral Small
@@ -791,9 +880,11 @@
           tip: "<strong>1.3B params.</strong> Python coding focus. Started the 'small but mighty' narrative."
         - name: Phi-2
           date: "Dec 2023"
+          url: "https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/"
           tip: "2.7B params. General language understanding."
         - name: Phi-3
           date: "Apr 2024"
+          url: "https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/"
           tip: "Family release."
           children:
             - name: Phi-3-mini
@@ -807,6 +898,7 @@
             - name: Phi-3.5-vision
         - name: Phi-4
           date: "Dec 2024"
+          url: "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090"
           tip: "<strong>14B params.</strong> Focus on synthetic data."
           children:
             - name: Phi-4-mini-reasoning
@@ -856,13 +948,16 @@
   children:
     - name: Grok-1
       date: "Nov 2023"
+      url: "https://x.ai/blog/grok"
       tip: "<strong>Preview release.</strong> X Premium only. Named from Robert Heinlein's \"Stranger in a Strange Land.\" To grok = to understand deeply."
       children:
         - name: Grok-1 (open-source)
           date: "Mar 2024"
+          url: "https://x.ai/blog/grok-os"
           tip: "Open-sourced under Apache 2.0."
         - name: Grok-1.5
           date: "Mar 2024"
+          url: "https://x.ai/blog/grok-1.5"
           tip: "Long context improvements."
         - name: Grok-1.5 Vision
           dead: true
@@ -870,12 +965,14 @@
           tip: "<strong>Announced but never shipped.</strong>"
     - name: Grok-2
       date: "Aug 2024"
+      url: "https://x.ai/blog/grok-2"
       tip: "Improved reasoning and multimodal."
       children:
         - name: Grok-2 mini
           tip: "The one small variant in the entire Grok line."
     - name: Grok-3
       date: "Feb 2025"
+      url: "https://x.ai/blog/grok-3"
       children:
         - name: Grok-3 mini
           tip: "Smaller reasoning variant. Even xAI has 'mini' now."
@@ -915,6 +1012,7 @@
           date: "2024"
     - name: Nova
       date: "Dec 2024"
+      url: "https://aws.amazon.com/blogs/aws/introducing-amazon-nova-frontier-intelligence-and-industry-leading-price-performance/"
       tip: "<strong>Launched at AWS re:Invent.</strong> Clean tiered naming. Formerly codenamed 'Olympus.'"
       children:
         - name: Nova Micro
@@ -931,9 +1029,11 @@
           tip: "Video generation."
         - name: Nova Act
           date: "Mar 2025"
+          url: "https://labs.amazon.science/blog/nova-act"
           tip: "<strong>Agentic model.</strong> Browser agent. Not a generation model, not a language model. An agent model."
         - name: Nova Sonic
           date: "Mar 2025"
+          url: "https://aws.amazon.com/blogs/aws/introducing-amazon-nova-sonic-human-like-voice-conversations-for-generative-ai-applications/"
           tip: "<strong>Speech-to-speech.</strong> Low-latency voice. Amazon now has: Micro, Lite, Pro, Premier, Canvas, Reel, Act, Sonic. Eight sub-brands."
         - name: Nova 2 Lite
           date: "Dec 2025"
@@ -962,6 +1062,7 @@
   children:
     - name: Stable Diffusion
       date: "Aug 2022"
+      url: "https://stability.ai/news/stable-diffusion-public-release"
       tip: "<strong>Open-source text-to-image.</strong> Democratized image generation."
       children:
         - name: SD 1.4
@@ -977,12 +1078,14 @@
         - name: SDXL
           date: "Jul 2023"
           note: "suddenly an acronym"
+          url: "https://stability.ai/news/stable-diffusion-sdxl-1-announcement"
           tip: "<strong>Stable Diffusion XL.</strong> Jumped from 2.1 to 'XL'. Not 3.0. Just... XL."
         - name: SDXL Turbo
           date: "Nov 2023"
           tip: "Real-time generation. 'Turbo' borrowed from OpenAI's vocabulary."
         - name: SD 3
           date: "Feb 2024"
+          url: "https://stability.ai/news/stable-diffusion-3"
           tip: "<strong>New architecture.</strong> Back to version numbers after the XL detour."
           children:
             - name: SD 3 Medium
@@ -1027,13 +1130,16 @@
     - name: AFM-on-device
       date: "Jun 2024"
       note: "\"Apple Foundation Models.\" that's the name."
+      url: "https://machinelearning.apple.com/research/introducing-apple-foundation-models"
       tip: "<strong>~3B parameters (pruned from 6.4B).</strong> Runs locally on iPhone/iPad/Mac. Apple's naming strategy: describe what it is, where it runs, and stop."
     - name: AFM-server
       date: "Jun 2024"
       note: "that's the other name. they're done."
+      url: "https://machinelearning.apple.com/research/introducing-apple-foundation-models"
       tip: "<strong>Larger model running on Apple's Private Cloud Compute.</strong> No version numbers. No tiers. No codenames. Just 'on-device' and 'server.'"
     - name: Foundation Models (2025)
       date: "Jun 2025"
+      url: "https://machinelearning.apple.com/research/apple-foundation-models-2025-updates"
       tip: "<strong>Updated generation.</strong> Direct API access via Foundation Models framework. Still no fun names."
 
 # ─────────────────── ALIBABA / QWEN ───────────────────
@@ -1043,6 +1149,7 @@
   children:
     - name: "Qwen (\u901A\u4E49\u5343\u95EE)"
       date: "Aug 2023"
+      url: "https://qwenlm.github.io/blog/qwen/"
       tip: "<strong>First generation.</strong> 7B, 14B, 72B parameters. Open-sourced. Name means 'understanding everything' in Chinese."
       children:
         - name: Qwen-7B
@@ -1050,9 +1157,11 @@
         - name: Qwen-72B
     - name: Qwen-1.5
       date: "Feb 2024"
+      url: "https://qwenlm.github.io/blog/qwen1.5/"
       tip: "<strong>Major update.</strong> 0.5B to 110B sizes. 29 languages."
     - name: Qwen-2
       date: "Jun 2024"
+      url: "https://qwenlm.github.io/blog/qwen2/"
       tip: "<strong>Architecture improvements.</strong> GQA, dual-chunk attention."
       children:
         - name: Qwen2-0.5B
@@ -1060,6 +1169,7 @@
           tip: "Flagship. Competitive with Llama 3 70B."
     - name: Qwen-2.5
       date: "Sep 2024"
+      url: "https://qwenlm.github.io/blog/qwen2.5/"
       tip: "<strong>Over 100 model variants.</strong> Every combination of size and specialty."
       children:
         - name: Qwen2.5-72B
@@ -1077,6 +1187,7 @@
       tip: "<strong>Reasoning model.</strong> Separate from the Qwen numbering. Like OpenAI splitting GPT and o-series. 'QwQ' looks like a face."
     - name: Qwen3
       date: "Apr 2025"
+      url: "https://qwenlm.github.io/blog/qwen3/"
       tip: "<strong>Latest generation.</strong> Dense and MoE variants. Hybrid thinking modes."
       children:
         - name: Qwen3-235B-A22B
@@ -1114,6 +1225,7 @@
           date: "Mar 2024"
         - name: Nemotron-4 340B
           date: "Jun 2024"
+          url: "https://blogs.nvidia.com/blog/nemotron-4-synthetic-data-generation-llm-training/"
           tip: "<strong>340B dense model.</strong> Trained on 9T tokens."
         - name: Llama-3.1-Nemotron-70B
           date: "Oct 2024"
@@ -1299,6 +1411,7 @@
     - name: OLMo
       date: "Feb 2024"
       note: "Open Language Model"
+      url: "https://allenai.org/blog/hello-olmo-a-truly-open-llm-43f7e7359222"
       tip: "<strong>Fully open-source.</strong> Training data, code, weights, everything. OLMo = Open Language Model."
       children:
         - name: OLMo 7B
@@ -1365,6 +1478,7 @@
     - name: R1-1776
       date: "Feb 2025"
       note: "DeepSeek R1 minus the censorship"
+      url: "https://www.perplexity.ai/hub/blog/open-sourcing-r1-1776"
       tip: "<strong>Post-trained DeepSeek R1.</strong> Removed Chinese government censorship. '1776' = American independence. That's the actual naming rationale."
 
 # ─────────────────── MINIMAX ───────────────────
