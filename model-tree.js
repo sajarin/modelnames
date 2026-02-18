@@ -241,7 +241,7 @@ class ModelTree extends HTMLElement {
     return `
 :host{display:block;font-family:var(--mt-font,'Commit Mono','SF Mono','Consolas','Monaco',monospace);font-size:var(--mt-font-size,15px)}
 
-.tree-outer{background:var(--mt-bg,rgba(255,255,255,.015));border:1px solid var(--mt-border,rgba(255,255,255,.06));border-radius:8px;padding:0;position:relative;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.3),0 8px 40px rgba(0,0,0,.15)}
+.tree-outer{background:var(--mt-bg,#0e0e12);border:1px solid var(--mt-border,rgba(255,255,255,.06));border-radius:8px;padding:0;position:relative;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.3),0 8px 40px rgba(0,0,0,.15)}
 .tree-outer::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,transparent 0%,rgba(255,0,128,.012) 30%,rgba(0,255,255,.012) 50%,rgba(255,255,0,.012) 70%,transparent 100%);pointer-events:none;z-index:0}
 
 .tree-toolbar{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid var(--mt-border,rgba(255,255,255,.06));position:relative;z-index:1;background:var(--mt-toolbar-bg,rgba(255,255,255,.02))}
