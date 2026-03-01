@@ -514,6 +514,21 @@
               date: "Dec 2025"
               url: "https://blog.google/products/gemini/gemini-3-flash/"
               tip: "Replaces Gemini 2.5 Flash."
+        - name: Gemini 3.1
+          date: "Feb 2026"
+          url: "https://blog.google/products/gemini/gemini-3-1-pro/"
+          tip: "<strong>Another point release.</strong> Pro and Flash Image variants."
+          children:
+            - name: Pro
+              date: "Feb 2026"
+              url: "https://blog.google/products/gemini/gemini-3-1-pro/"
+              note: "#1 on GPQA"
+              tip: "<strong>Claims #1 on GPQA leaderboard.</strong> 94.3% on GPQA Diamond. 1M token context, 64K output. Also 80.6% on SWE-Bench Verified."
+            - name: Flash Image
+              date: "Feb 2026"
+              url: "https://blog.google/technology/ai/nano-banana-2/"
+              note: "Nano Banana 2 \U0001F34C"
+              tip: "<strong>Nano Banana is back.</strong> Officially 'Gemini 3.1 Flash Image,' everyone calls it Nano Banana 2. Up to 4K resolution, character consistency for 5 characters, 14 objects per workflow. The meme brand is now the product."
     - name: Open Models
       section: true
 
@@ -711,11 +726,11 @@
         - name: Opus 4.6
           date: "Feb 2026"
           url: "https://www.anthropic.com/news/claude-opus-4-6"
-          tip: "<strong>Opus shipped first.</strong> Introduces 'agent teams' — agents that spawn sub-agents. Found 500+ zero-day vulnerabilities during testing."
+          tip: "<strong>Opus shipped first.</strong> Introduces 'agent teams' — agents that spawn sub-agents. Found 500+ zero-day vulnerabilities during testing. #1 on GDPVAL-AA leaderboard."
         - name: Sonnet 4.6
           date: "Feb 2026"
           url: "https://www.anthropic.com/news/claude-sonnet-4-6"
-          tip: "<strong>Sonnet catches up.</strong> Same pricing as Sonnet 4.5 ($3/$15 per million tokens). Users preferred it over Opus 4.5 ~59% of the time. Enhanced coding, computer use, and long-context reasoning."
+          tip: "<strong>Sonnet catches up.</strong> Same pricing as Sonnet 4.5 ($3/$15 per million tokens). Users preferred it over Opus 4.5 ~59% of the time. Enhanced coding, computer use, and long-context reasoning. Top of GDPVAL-AA alongside Opus 4.6."
 
 # ─────────────────── DEEPSEEK ───────────────────
 - name: DeepSeek
@@ -1444,6 +1459,27 @@
           url: "https://qwenlm.github.io/blog/qwen3/"
           note: "'Next' is a tier now??"
           tip: "<strong>'Next' as a variant name.</strong> Not V2, not Plus, not Pro. 'Next.' The word that means 'the one after this one.'"
+    - name: Qwen3.5
+      date: "Feb 2026"
+      note: "the 'Medium Model Series'"
+      url: "https://qwen.ai/blog?id=qwen3.5"
+      tip: "<strong>The 'Medium Model Series.'</strong> Hybrid architecture: Gated Delta Networks (linear attention) + standard Gated Attention. Apache 2.0."
+      children:
+        - name: Qwen3.5-27B
+          url: "https://qwen.ai/blog?id=qwen3.5"
+          tip: "Dense model. 27B all active. Runs on consumer GPUs with 4-bit quantization (~14GB VRAM)."
+        - name: Qwen3.5-35B-A3B
+          url: "https://qwen.ai/blog?id=qwen3.5"
+          note: "35B total, 3B active"
+          tip: "<strong>Outperforms the 235B flagship with 7x fewer active params.</strong> Sparse MoE. 262K context, extensible to 1M. The 'medium' model that beats the 'large' model."
+        - name: Qwen3.5-122B-A10B
+          url: "https://qwen.ai/blog?id=qwen3.5"
+          note: "122B total, 10B active"
+          tip: "Largest in the Medium series. 1M+ context."
+        - name: Qwen3.5-Flash
+          url: "https://qwen.ai/blog?id=qwen3.5"
+          note: "proprietary, API-only"
+          tip: "The one they don't open-source. Because every open-source company needs a proprietary model."
 
 # ─────────────────── NVIDIA ───────────────────
 - name: NVIDIA
@@ -1825,10 +1861,26 @@
     - name: MiniMax M2.5
       date: "Feb 2026"
       url: "https://www.minimax.io/news/minimax-m25"
-      tip: "Latest MiniMax model. From 'abab' to 'MiniMax-01' to 'M1' to 'M2.5.' Four naming conventions in two years."
+      note: "SWE-Bench top 4"
+      tip: "<strong>229B params, 17B active, SWE-Bench top 4.</strong> Hybrid architecture: linear attention + sparse MoE. Supports 201 languages. From 'abab' to 'MiniMax-01' to 'M1' to 'M2.5.' Four naming conventions in two years."
     - name: MiniMax M2-her
       date: "Oct 2025"
       url: "https://www.minimax.io/news/minimax-m2"
       note: "persona variant??"
       tip: "<strong>'her.'</strong> A model variant called 'her.' Like the Scarlett Johansson movie. Make of that what you will."
+
+# ─────────────────── INCEPTION LABS ───────────────────
+- name: Inception Labs
+  company: inception
+  tagline: "diffusion models for text, named after planets"
+  children:
+    - name: Mercury
+      date: "2025"
+      url: "https://www.inceptionlabs.ai/"
+      tip: "<strong>First diffusion-based language model.</strong> Generates tokens in parallel instead of sequentially. Not autoregressive. A fundamentally different architecture."
+    - name: Mercury 2
+      date: "Feb 2026"
+      url: "https://www.inceptionlabs.ai/blog/introducing-mercury-2"
+      note: "1000+ tokens/sec"
+      tip: "<strong>Diffusion-based reasoning LLM.</strong> 1,009 tokens/sec on NVIDIA Blackwell — 5x faster than leading speed-optimized LLMs. 128K context. Parallel token generation instead of autoregressive. Founded by Stanford, UCLA, and Cornell researchers."
 
