@@ -979,7 +979,7 @@
         - name: Ministral
           date: "Oct 2024"
           url: "https://mistral.ai/news/ministraux/"
-          tip: "<strong>Edge/small models.</strong> Mini + stral."
+          tip: "<strong>Edge/small models.</strong> Possibly a pun on 'm\xE9nestrel' (minstrel), 'ministre' (minister), or Minitel — or all of the above."
           children:
             - name: Ministral 3B
               url: "https://mistral.ai/news/ministraux/"
@@ -988,7 +988,7 @@
         - name: Magistral
           date: "Jun 2025"
           url: "https://mistral.ai/news/magistral/"
-          tip: "<strong>Reasoning models.</strong> Magist(rate) + stral? Mag(nificent) + stral? Nobody knows."
+          tip: "<strong>Reasoning models.</strong> French for 'masterful' — as in a 'cours magistral' (lecture). The grandeur contrasts nicely with the Mini in Ministral."
           children:
             - name: Magistral Small
               url: "https://mistral.ai/news/magistral/"
