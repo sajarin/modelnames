@@ -167,17 +167,69 @@
               url: "https://openai.com/index/introducing-gpt-5-2-codex/"
               note: "Codex in 5.1 AND 5.2"
               tip: "<strong>Codex appears in both 5.1 and 5.2.</strong> Two parallel Codex lines. The naming is fractal."
-        - name: GPT-5.3-Codex
+        - name: GPT-5.3
           date: "Jan 2026"
-          note: "most capable agentic coding model"
-          url: "https://openai.com/index/introducing-gpt-5-3-codex/"
-          tip: "<strong>Combines Codex + GPT-5 training stacks.</strong> New industry highs on SWE-Bench Pro. ~25% faster than predecessors. The Codex zombie brand is now the flagship."
+          url: "https://openai.com/index/gpt-5-3-instant/"
+          tip: "<strong>5.3 ships as a Codex first, then Instant.</strong> The base product name showed up months after its first sub-variant."
           children:
+            - name: GPT-5.3-Codex
+              date: "Jan 2026"
+              note: "most capable agentic coding model"
+              url: "https://openai.com/index/introducing-gpt-5-3-codex/"
+              tip: "<strong>Combines Codex + GPT-5 training stacks.</strong> New industry highs on SWE-Bench Pro. ~25% faster than predecessors. The Codex zombie brand is now the flagship."
             - name: GPT-5.3-Codex-Spark
               date: "Feb 2026"
               note: "runs on Cerebras hardware"
               url: "https://openai.com/index/introducing-gpt-5-3-codex-spark/"
               tip: "<strong>Ultra-fast variant.</strong> 1000+ tokens/sec on Cerebras WSE-3 chips. 'Spark' is the new size tier. Not Mini, not Nano, not Max — Spark."
+            - name: GPT-5.3 Instant
+              date: "Mar 2026"
+              url: "https://openai.com/index/gpt-5-3-instant/"
+              note: "the anti-cringe update"
+              tip: "<strong>'Stop telling users to calm down.'</strong> Explicitly trained to reduce overbearing tone and unnecessary caveats. API id: gpt-5.3-chat-latest. 'Instant' reappeared as a size tier after being retired on GPT-5."
+            - name: GPT-5.3 Instant Mini
+              date: "Apr 2026"
+              url: "https://help.openai.com/en/articles/11909943-gpt-53-and-gpt-54-in-chatgpt"
+              note: "fallback for ChatGPT"
+              tip: "Fallback model for ChatGPT when capacity is tight. 'Instant Mini' stacks two size tiers on one model name."
+        - name: GPT-5.4
+          date: "Mar 2026"
+          url: "https://openai.com/index/introducing-gpt-5-4/"
+          tip: "<strong>Computer use goes mainstream.</strong> 75% on OSWorld-Verified (vs 47% for 5.2, 72% for humans). 1M context via API. 33% fewer factual errors. 83% on GDPval."
+          children:
+            - name: GPT-5.4 Thinking
+              date: "Mar 2026"
+              url: "https://openai.com/index/introducing-gpt-5-4/"
+              tip: "<strong>Reasoning variant.</strong> 'Thinking' as the suffix this time. Not 'Pro Mode,' not 'Deep Think,' not 'o'. Every lab has its own word for the same thing."
+            - name: GPT-5.4 Pro
+              date: "Mar 2026"
+              url: "https://openai.com/index/introducing-gpt-5-4/"
+              tip: "Extended compute. 'Pro' now exists across GPT-5, 5.2, 5.4, and o3. Four different Pros."
+            - name: GPT-5.4 mini
+              date: "Mar 2026"
+              url: "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/"
+              tip: "Smaller sibling. Free tier."
+            - name: GPT-5.4 nano
+              date: "Mar 2026"
+              url: "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/"
+              note: "API only"
+              tip: "Smallest variant. API only."
+            - name: GPT-5.4-Cyber
+              date: "Apr 2026"
+              url: "https://openai.com/index/scaling-trusted-access-for-cyber-defense/"
+              note: "fine-tune, gated access"
+              tip: "<strong>Fine-tuned for defensive cybersecurity.</strong> Binary reverse engineering, vulnerability analysis, malware triage. Only available to vetted defenders via the Trusted Access for Cyber program. OpenAI's answer to Claude Mythos."
+        - name: GPT-6
+          dead: true
+          date: "Apr 2026"
+          note: "codename 'Spud,' not shipped yet"
+          url: "https://openai.com/"
+          tip: "<strong>Codenamed 'Spud.'</strong> Pretraining wrapped Mar 17 2026. Reports pointed at an Apr 14 launch that came and went. Still unreleased as of Apr 20. Rumored 2M context, ~40% over GPT-5.4."
+        - name: GPT-Rosalind
+          date: "Apr 2026"
+          note: "first domain-specific GPT"
+          url: "https://openai.com/index/introducing-gpt-rosalind/"
+          tip: "<strong>Life sciences reasoning model.</strong> Named for Rosalind Franklin (DNA structure). First purpose-built domain-specific GPT. 0.751 on BixBench, connects to 50+ scientific tools. Gated access — Amgen, Moderna, Allen Institute, Thermo Fisher."
     - name: Open Source
       section: true
       note: "OpenAI releasing open-source. yes, really."
@@ -192,6 +244,10 @@
           date: "Aug 2025"
           url: "https://openai.com/index/introducing-gpt-oss/"
           tip: "Smaller open-source variant. Outperforms similarly sized open models on reasoning."
+        - name: gpt-oss-safeguard
+          url: "https://openai.com/index/introducing-gpt-oss-safeguard/"
+          note: "safety fine-tune of gpt-oss"
+          tip: "<strong>Safety-tuned gpt-oss.</strong> Also Apache 2.0. The open-source line gets its own 'Guard' variant — every lab with open weights has one now."
     - name: o-Series
       section: true
       note: "entirely separate product line"
@@ -257,9 +313,11 @@
           tip: "<strong>Text-to-video.</strong> Up to 6 seconds initially. Named after the Japanese word for sky."
           children:
             - name: Sora 2
+              dead: true
               date: "Sep 2025"
               url: "https://openai.com/index/sora-2/"
-              tip: "15-25 second videos. Sound effects. iOS app. 'Cameo' feature."
+              note: "app discontinued Apr 26 2026"
+              tip: "15-25 second videos. Sound effects. iOS app. 'Cameo' feature. OpenAI announced on Mar 24 2026 that Sora would be shut down — app sunsets Apr 26, API Sep 24. Reason: nobody was using it and it was costing OpenAI compute needed for 'Spud.'"
         - name: Whisper
           date: "Sep 2022"
           url: "https://openai.com/index/whisper/"
@@ -284,6 +342,11 @@
               date: "Aug 2025"
               url: "https://openai.com/index/introducing-our-next-generation-audio-models/"
               tip: "The mini variant. OpenAI now has 'mini' in GPT-4o, o1, o3, o4, and Audio. Five product lines."
+        - name: gpt-image-1.5
+          date: "Apr 2026"
+          url: "https://openai.com/index/codex-for-almost-everything/"
+          note: "image model, ships inside Codex"
+          tip: "<strong>Image generation, lowercase-hyphenated ID.</strong> Not 'DALL·E 4.' Not 'GPT Image.' gpt-image-1.5 — the snake-case, API-style name has fully colonized product naming. Ships with the Codex super app on Apr 16."
         - name: Jukebox
           dead: true
           date: "Apr 2020"
@@ -517,7 +580,7 @@
         - name: Gemini 3.1
           date: "Feb 2026"
           url: "https://blog.google/products/gemini/gemini-3-1-pro/"
-          tip: "<strong>Another point release.</strong> Pro and Flash Image variants."
+          tip: "<strong>Another point release.</strong> Pro, Flash Image, Flash-Lite, and Flash Live variants."
           children:
             - name: Pro
               date: "Feb 2026"
@@ -529,6 +592,16 @@
               url: "https://blog.google/technology/ai/nano-banana-2/"
               note: "Nano Banana 2 \U0001F34C"
               tip: "<strong>Nano Banana is back.</strong> Officially 'Gemini 3.1 Flash Image,' everyone calls it Nano Banana 2. Up to 4K resolution, character consistency for 5 characters, 14 objects per workflow. The meme brand is now the product."
+            - name: Flash-Lite
+              date: "Mar 2026"
+              url: "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-flash-lite"
+              note: "Flash wasn't small enough"
+              tip: "<strong>A lighter Flash.</strong> Flash was already the small one. Now there's a lite Flash. Google has Pro, Flash, Flash Image, Flash-Lite, Flash Live, and Nano. Six active tiers."
+            - name: Flash Live
+              date: "Mar 2026"
+              url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/"
+              note: "was \"Flash Native Audio\""
+              tip: "<strong>Real-time audio model.</strong> 960ms time-to-first-token. 90.8% on ComplexFuncBench Audio. Formerly called 'Flash Native Audio' in 2.5 — rebranded to 'Flash Live' because live apparently sells better than native."
     - name: Open Models
       section: true
 
@@ -552,6 +625,27 @@
               note: "\"n\" for nano? for on-device?"
               url: "https://deepmind.google/models/gemma/gemma-3n/"
               tip: "<strong>On-device variant.</strong> Runs on phones. The 'n' suffix is never explained. Not to be confused with Gemini Nano."
+            - name: Gemma 4
+              date: "Apr 2026"
+              note: "Apache 2.0 now"
+              url: "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+              tip: "<strong>Built off Gemini 3.</strong> 256K context, native vision + audio, 140+ languages. Switched to Apache 2.0 license. Four sizes — but two of them are labeled 'Effective.'"
+              children:
+                - name: Gemma 4 E2B
+                  url: "https://deepmind.google/models/gemma/gemma-4/"
+                  note: "\"Effective 2B\""
+                  tip: "<strong>'Effective 2B.'</strong> A new size tier that is not actually 2B. It's a bigger model that 'performs like 2B.' The parameter count is now aspirational."
+                - name: Gemma 4 E4B
+                  url: "https://deepmind.google/models/gemma/gemma-4/"
+                  note: "\"Effective 4B\""
+                  tip: "The other Effective. Acts like 4B. Isn't 4B."
+                - name: Gemma 4 26B MoE
+                  url: "https://deepmind.google/models/gemma/gemma-4/"
+                  tip: "26B total, 3.8B active. Latency-optimized."
+                - name: Gemma 4 31B
+                  url: "https://deepmind.google/models/gemma/gemma-4/"
+                  note: "dense flagship"
+                  tip: "Largest dense variant. Pitched as a fine-tuning foundation."
     - name: Media
       section: true
 
@@ -583,6 +677,11 @@
               date: "May 2025"
               url: "https://blog.google/technology/ai/generative-media-models-io-2025/"
               tip: "Added audio."
+            - name: Veo 4
+              date: "Apr 2026"
+              url: "https://deepmind.google/models/veo/"
+              note: "shipped the week OpenAI killed Sora"
+              tip: "<strong>30-second clips, native 4K, zero-shot avatars, storyboard inputs.</strong> Launched on Google Flow and Gemini Ultra days after OpenAI announced Sora was shutting down — perfect timing if you're Google, bad luck if you're OpenAI."
         - name: MusicLM
           dead: true
           date: "Jan 2023"
@@ -731,6 +830,26 @@
           date: "Feb 2026"
           url: "https://www.anthropic.com/news/claude-sonnet-4-6"
           tip: "<strong>Sonnet catches up.</strong> Same pricing as Sonnet 4.5 ($3/$15 per million tokens). Users preferred it over Opus 4.5 ~59% of the time. Enhanced coding, computer use, and long-context reasoning. Top of GDPVAL-AA alongside Opus 4.6."
+    - name: Claude 4.7
+      date: "Apr 2026"
+      url: "https://www.anthropic.com/news/claude-opus-4-7"
+      tip: "Opus-only point release. No Sonnet 4.7, no Haiku 4.7 — at least not yet."
+      children:
+        - name: Opus 4.7
+          date: "Apr 2026"
+          url: "https://www.anthropic.com/news/claude-opus-4-7"
+          note: "same price as 4.6"
+          tip: "<strong>First Opus upgrade that doesn't raise the price.</strong> 87.6% on SWE-bench Verified. 2x agentic throughput, 3.75MP vision, 1M context, new tokenizer. Stays at $5/$25 per M tokens. Ships with real-time cybersecurity refusal safeguards."
+        - name: Claude Design
+          date: "Apr 2026"
+          url: "https://www.anthropic.com/news/claude-design-anthropic-labs"
+          note: "product, powered by Opus 4.7"
+          tip: "<strong>Design tool, not a model.</strong> Anthropic Labs product built on Opus 4.7. Prototypes, slides, one-pagers. Reads your codebase to build a design system. Exports to Canva/PDF/PPTX. Labs is becoming a full application shop."
+    - name: Claude Mythos Preview
+      date: "Apr 2026"
+      url: "https://red.anthropic.com/2026/mythos-preview/"
+      note: "not GA — Project Glasswing only"
+      tip: "<strong>A class above Opus 4.7.</strong> Used internally to find thousands of zero-days across every major OS and browser, plus a 17-year-old RCE in FreeBSD (CVE-2026-4747). Available only to ~50 launch partners via Project Glasswing. 'Mythos' because naming models after Greek/occult concepts is how you signal danger."
 
 # ─────────────────── DEEPSEEK ───────────────────
 - name: DeepSeek
@@ -813,9 +932,9 @@
           tip: "Improved version. Uses the 'V' prefix like the general models."
 
 # ─────────────────── META ───────────────────
-- name: Meta
+- name: Meta / MSL
   company: meta
-  tagline: "changed the capitalization, changed the naming scheme, announced vaporware"
+  tagline: "changed the capitalization, killed the brand, went closed-source"
   children:
     - name: LLaMA
       date: "Feb 2023"
@@ -881,6 +1000,11 @@
           url: "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
           note: "announced, never released"
           tip: "<strong>288B active / ~2T total.</strong> 16 experts. Announced alongside Scout and Maverick but was 'still in training.' As of Feb 2026 it remains unreleased."
+    - name: Muse Spark
+      date: "Apr 2026"
+      note: "killed Llama, rebranded, went closed-source"
+      url: "https://ai.meta.com/blog/introducing-muse-spark-msl/"
+      tip: "<strong>Meta retired the Llama brand.</strong> First model out of Meta Superintelligence Labs (MSL). Natively multimodal reasoning with 'Contemplating mode' — parallel multi-agent orchestration. Proprietary, not open-weights. The 'Linux of AI' pitch is dead; Meta is now closed-source like everyone else."
     - name: LlamaGuard
       date: "Dec 2023"
       url: "https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/"
@@ -928,6 +1052,11 @@
               url: "https://mistral.ai/news/mistral-3"
               note: "personality as a model variant"
               tip: "<strong>'Creative' as a variant.</strong> Not a size. Not a speed. A vibe. Mistral is naming models by personality now."
+            - name: Small 4
+              date: "Mar 2026"
+              url: "https://mistral.ai/news/mistral-small-4"
+              note: "everything merged into Small"
+              tip: "<strong>Magistral + Pixtral + Devstral, unified.</strong> Reasoning, vision, and agentic coding folded into a single 'Small' model. The -stral cinematic universe is now a crossover event."
         - name: Mistral Medium
           url: "https://mistral.ai/news/mistral-medium-3"
           children:
@@ -1023,6 +1152,16 @@
               url: "https://mistral.ai/news/voxtral-transcribe-2"
               note: "~200ms latency"
               tip: "<strong>Near real-time transcription.</strong> 13 languages. ~200ms latency. 'Realtime' as a variant name, not a feature."
+            - name: Voxtral TTS
+              date: "Mar 2026"
+              url: "https://mistral.ai/news/voxtral-tts"
+              note: "open-weights TTS"
+              tip: "<strong>Speech generation.</strong> Open-weights multilingual TTS, 9 languages, custom voices. Voxtral now handles both ears and mouth."
+        - name: Leanstral
+          date: "Mar 2026"
+          url: "https://mistral.ai/news/leanstral"
+          note: "Lean 4 formal proofs"
+          tip: "<strong>Formal-proof agent for Lean 4.</strong> Lean + stral. The -stral suffix has now claimed theorem proving. Running out of domains."
     - name: Le Chat
       date: "Feb 2024"
       url: "https://mistral.ai/news/le-chat-mistral/"
@@ -1088,6 +1227,11 @@
               url: "https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/"
               note: "5.6B, speech + vision + text"
               tip: "<strong>Integrates speech, vision, and text in 5.6B params.</strong> Doing what 100B+ models do. The 'small but mighty' narrative continues."
+            - name: Phi-4 Reasoning Vision 15B
+              date: "Mar 2026"
+              url: "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-mar-2026/"
+              note: "four modifiers and a size"
+              tip: "<strong>Model + version + capability + modality + size.</strong> 15B multimodal reasoner. The name is now five concepts, space-separated. Microsoft's Phi naming has fully collapsed."
     - name: Orca
       dead: true
       date: "Jun 2023"
@@ -1121,6 +1265,28 @@
       url: "https://www.theinformation.com/articles/microsoft-readies-new-ai-model-to-compete-with-google-openai"
       note: "500B params, may not exist"
       tip: "<strong>Announced under Mustafa Suleyman (ex-DeepMind).</strong> 500B parameters. Encountered training issues. As of Feb 2026, deployment status remains unclear."
+    - name: MAI Trio
+      section: true
+      note: "Microsoft's pivot away from OpenAI, three models in one day"
+      children:
+        - name: MAI-Transcribe-1
+          date: "Apr 2026"
+          url: "https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/"
+          note: "beats Whisper-large-v3"
+          tip: "<strong>3.8% avg WER across 25 FLEURS languages.</strong> #1 on FLEURS. Microsoft built a speech-to-text model that beats OpenAI's — while Microsoft is still OpenAI's biggest investor."
+        - name: MAI-Voice-1
+          date: "Apr 2026"
+          url: "https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/"
+          tip: "Text-to-speech. 60 seconds of audio generated in 1 second. Custom voice cloning."
+        - name: MAI-Image-2
+          date: "Apr 2026"
+          url: "https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/"
+          tip: "Top-3 on Arena.ai image leaderboard at launch. 2x faster than its predecessor."
+        - name: MAI-Image-2-Efficient
+          date: "Apr 2026"
+          url: "https://venturebeat.com/technology/microsoft-launches-mai-image-2-efficient-a-cheaper-and-faster-ai-image-model"
+          note: "'Efficient' as a suffix"
+          tip: "<strong>'Efficient' is the new 'Mini.'</strong> Smaller, cheaper variant — but named for what it does, not its size. Released 11 days after MAI-Image-2."
 
 # ─────────────────── xAI ───────────────────
 - name: xAI
@@ -1181,6 +1347,17 @@
     - name: Grok-4.20
       date: "Feb 2026"
       tip: "<strong>From 4.1 to 4.20.</strong> Skipped 18 versions — or just picked the weed number. Either way, xAI's 'surprisingly normal naming' streak is over. Beta features a 4-agent collaboration system."
+      children:
+        - name: Grok-4.20 Beta 2
+          date: "Mar 2026"
+          url: "https://docs.x.ai/developers/release-notes"
+          note: "second beta of a .20"
+          tip: "Second beta iteration. 'Beta 2' on a point-release with two digits in the decimal is now just how xAI ships."
+    - name: Grok-4.3
+      date: "Apr 2026"
+      url: "https://docs.x.ai/developers/release-notes"
+      note: "back to one decimal digit"
+      tip: "<strong>Dropped back to a one-digit decimal.</strong> Went 4.1 → 4.20 → 4.3 — which in software versioning means 4.3 is smaller than 4.20. Now generates PDFs, spreadsheets, and PowerPoints directly."
 
 # ─────────────────── AMAZON ───────────────────
 - name: Amazon
@@ -1369,6 +1546,11 @@
       date: "Jun 2025"
       url: "https://machinelearning.apple.com/research/apple-foundation-models-2025-updates"
       tip: "<strong>Updated generation.</strong> Direct API access via Foundation Models framework. Still no fun names."
+    - name: Foundation Models (iOS 26.4)
+      date: "Mar 2026"
+      url: "https://developer.apple.com/hello/march26/"
+      note: "versioned by the OS, not the model"
+      tip: "<strong>Instruction-following and tool-calling upgrade.</strong> Apple still doesn't give its model a name — it versions by iOS release (26.4). New Python bindings ship alongside. A model you refer to by the device firmware that contains it."
 
 # ─────────────────── ALIBABA / QWEN ───────────────────
 - name: "Alibaba / Qwen"
@@ -1465,6 +1647,11 @@
       url: "https://qwen.ai/blog?id=qwen3.5"
       tip: "<strong>The 'Medium Model Series.'</strong> Hybrid architecture: Gated Delta Networks (linear attention) + standard Gated Attention. Apache 2.0."
       children:
+        - name: Qwen3.5 small sizes
+          date: "Mar 2026"
+          url: "https://medium.com/data-science-in-your-pocket/qwen-3-5-small-model-series-released-7a5ed34fcbb3"
+          note: "9B, 4B, 2B, 0.8B"
+          tip: "<strong>Four more sizes, all released on a single day (Mar 2).</strong> Qwen now ships at 0.8B, 2B, 4B, 9B, 27B, 35B-A3B, 122B-A10B, 397B-A17B. Eight sizes in one version."
         - name: Qwen3.5-27B
           url: "https://qwen.ai/blog?id=qwen3.5"
           tip: "Dense model. 27B all active. Runs on consumer GPUs with 4-bit quantization (~14GB VRAM)."
@@ -1480,6 +1667,43 @@
           url: "https://qwen.ai/blog?id=qwen3.5"
           note: "proprietary, API-only"
           tip: "The one they don't open-source. Because every open-source company needs a proprietary model."
+        - name: Qwen3.5-Omni
+          date: "Mar 2026"
+          url: "https://qwenlm.github.io/"
+          note: "Omni returns"
+          tip: "Multimodal 'Omni' revision. Alibaba now has Qwen3-Omni AND Qwen3.5-Omni — separate lineages from a 6-month span."
+    - name: Qwen3.6
+      date: "Mar 2026"
+      note: "skipped no version, promise"
+      url: "https://github.com/QwenLM/Qwen3.6"
+      tip: "<strong>1M context window, always-on chain-of-thought.</strong> Qwen 3 had Plus, Max, Next, Omni. Qwen 3.5 was the Medium Model Series. Qwen 3.6 is... a different version number with 'Plus' again."
+      children:
+        - name: Qwen3.6 Plus Preview
+          date: "Mar 2026"
+          url: "https://www.buildfastwithai.com/blogs/qwen-3-6-plus-preview-review"
+          note: "1M context, free on OpenRouter"
+          tip: "<strong>1M token context, 65K output.</strong> Always-on reasoning, native function calling. Ships as 'Preview' and 'Plus' simultaneously."
+        - name: Qwen3.6-35B-A3B
+          date: "Apr 2026"
+          url: "https://github.com/QwenLM/Qwen3.6"
+          note: "35B total, 3B active"
+          tip: "Sparse MoE. The 35B-A3B format is now standard Qwen — same spec class as Qwen3.5-35B-A3B. Two models, same shape, different version number."
+    - name: Media
+      section: true
+      children:
+        - name: Wan
+          url: "https://www.alibabacloud.com/blog/alibaba-unveils-its-latest-open-source-video-generation-model_602167"
+          tip: "<strong>Wanxiang, Alibaba's text-to-video and image-to-video family.</strong> Abbreviated 'Wan.' No relation to Qwen, same parent company."
+          children:
+            - name: Wan 2.6
+              date: "Mar 2026"
+              url: "https://www.alibabacloud.com/blog/alibaba-unveils-wan2-6-series-enabling-everyone-to-star-in-videos_602742"
+              tip: "Character-reference video series."
+            - name: Wan 2.7
+              date: "Apr 2026"
+              url: "https://www.alibabacloud.com/blog/alibaba-unveils-its-latest-open-source-video-generation-model_602167"
+              note: "Thinking Mode, in a video model"
+              tip: "<strong>'Thinking Mode' in a video generator.</strong> Plans composition before generating. Includes Wan2.7-Video and Wan2.7-Image. Reasoning-model suffixes are leaking into media models now."
 
 # ─────────────────── NVIDIA ───────────────────
 - name: NVIDIA
@@ -1515,13 +1739,19 @@
           tip: "<strong>30B total, 3B active MoE.</strong> Hybrid Mamba-Transformer architecture. 4x throughput of Nemotron 2 Nano. 1M token context."
           children:
             - name: Nemotron 3 Super
-              date: "H1 2026"
+              date: "Mar 2026"
               url: "https://nvidianews.nvidia.com/news/nvidia-debuts-nemotron-3-family-of-open-models"
-              tip: "Mid-tier. Coming first half 2026."
+              note: "120B total, 12B active"
+              tip: "<strong>120B open-weight MoE, 12B active.</strong> Shipped with 10T tokens of training data. Designed for agentic systems — Factory, Greptile, and CodeRabbit integrated it at launch."
             - name: Nemotron 3 Ultra
               url: "https://nvidianews.nvidia.com/news/nvidia-debuts-nemotron-3-family-of-open-models"
               note: "borrowed 'Ultra' from Google"
               tip: "Largest Nemotron 3. 'Ultra' was Google's word first, but everyone shares the vocabulary now."
+            - name: Nemotron Safety / RAG / Speech (Apr)
+              date: "Apr 2026"
+              url: "https://blogs.nvidia.com/blog/open-models-data-tools-accelerate-ai/"
+              note: "NVIDIA released three specialized Nemotrons in one drop"
+              tip: "<strong>A speech model, a multimodal RAG model, and a safety model.</strong> Shipped together on Apr 2. NVIDIA now spreads the 'Nemotron' name across every layer of the stack."
         - name: Nemotron Nano 12B V2 VL
           date: "Oct 2025"
           url: "https://nvidianews.nvidia.com/news/nvidia-debuts-nemotron-3-family-of-open-models"
@@ -1581,6 +1811,16 @@
               url: "https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models"
               note: "350M and ~1B sizes"
               tip: "<strong>Edge models.</strong> 350M and ~1B params. IBM borrowed 'Nano' from Google/OpenAI/NVIDIA. Everyone has Nano now."
+            - name: Granite 4.0 1B Speech
+              date: "Mar 2026"
+              url: "https://huggingface.co/ibm-granite/granite-4.0-1b-speech"
+              note: "#1 on OpenASR leaderboard"
+              tip: "<strong>1B ASR model.</strong> Six languages — EN, FR, DE, ES, PT, JA. The naming format 'Granite' + version + size + modality is now locked in."
+            - name: Granite 4.0 3B Vision
+              date: "Mar 2026"
+              url: "https://huggingface.co/ibm-granite/granite-4.0-3b-vision"
+              note: "document-extraction VLM"
+              tip: "<strong>Vision adapter on the Granite Micro backbone.</strong> Enterprise document extraction. IBM is shipping modality adapters on top of one small base model."
     - name: Granite Code
       date: "May 2024"
       url: "https://research.ibm.com/blog/granite-code-models-open-source"
@@ -1674,6 +1914,16 @@
           date: "Feb 2026"
           url: "https://github.com/THUDM/GLM-5"
           tip: "<strong>Compact OCR model.</strong> CogViT + GLM-0.5B encoder-decoder. A specialized model for document reading. The naming branches continue."
+        - name: GLM-5-Turbo
+          date: "Mar 2026"
+          url: "https://www.trendingtopics.eu/zhipu-ai-launches-glm-5-turbo-a-model-built-exclusively-for-openclaw/"
+          note: "'Turbo' finally reaches GLM"
+          tip: "<strong>Closed-source agentic variant.</strong> $1.20/$4 per M tokens. 'Turbo' made it to yet another lab. After OpenAI, Google, Whisper, and now Zhipu."
+    - name: GLM-5.1
+      date: "Mar 2026"
+      url: "https://help.apiyi.com/en/glm-5-1-open-source-api-launched-on-apiyi-en.html"
+      note: "#1 on SWE-Bench Pro"
+      tip: "<strong>744B MoE, 40B active, MIT license.</strong> API Mar 27, open weights Apr 7. Scored 58.4 on SWE-Bench Pro — ahead of GPT-5.4, Opus 4.6, and Gemini 3.1 Pro. A Chinese open model leading Western closed ones on coding."
 
 # ─────────────────── MOONSHOT AI ───────────────────
 - name: "Moonshot AI (\u6708\u4E4B\u6697\u9762)"
@@ -1724,6 +1974,11 @@
       url: "https://github.com/MoonshotAI/Kimi-K2.5"
       note: "multimodal upgrade"
       tip: "<strong>1T params with 400M-parameter MoonViT vision encoder.</strong> Processes images and video. Agent Swarm coordinates up to 100 specialized agents simultaneously. Beats GPT-5.2 on VideoMMMU."
+    - name: Kimi K2.6 Code Preview
+      date: "Apr 2026"
+      url: "https://kimi-k2.org/blog/23-kimi-k2-6-code-preview"
+      note: "preview of a preview"
+      tip: "<strong>Code-specialized K2.6.</strong> Shipped as 'Preview' before the base K2.6 exists. The 'code preview' is the preview that arrived first."
 
 # ─────────────────── ALLEN AI ───────────────────
 - name: Allen AI (AI2)
@@ -1769,6 +2024,11 @@
               url: "https://allenai.org/blog/olmo3"
             - name: OLMo 3.1 32B Think
               url: "https://allenai.org/blog/olmo3"
+        - name: Olmo Hybrid
+          date: "Mar 2026"
+          url: "https://allenai.org/blog/olmohybrid"
+          note: "architecture as a name"
+          tip: "<strong>'Hybrid' as a model name.</strong> 7B transformer + linear-RNN hybrid. Matches OLMo 3's MMLU using 49% fewer tokens. Named after its architecture, not its size or version."
     - name: OLMoE
       date: "Sep 2024"
       url: "https://allenai.org/blog/olmoe-an-open-mixture-of-experts-language-model"
@@ -1863,6 +2123,11 @@
       url: "https://www.minimax.io/news/minimax-m25"
       note: "SWE-Bench top 4"
       tip: "<strong>229B params, 17B active, SWE-Bench top 4.</strong> Hybrid architecture: linear attention + sparse MoE. Supports 201 languages. From 'abab' to 'MiniMax-01' to 'M1' to 'M2.5.' Four naming conventions in two years."
+    - name: MiniMax M2.7
+      date: "Apr 2026"
+      url: "https://www.minimax.io/news/minimax-m27"
+      note: "'self-evolving' model"
+      tip: "<strong>Skipped M2.6.</strong> 56.22% on SWE-Pro. Claims to 'self-evolve' through interaction rather than static training. 3x faster than Claude Opus 4.6. The 'decimals keep sliding' strategy continues."
     - name: MiniMax M2-her
       date: "Oct 2025"
       url: "https://www.minimax.io/news/minimax-m2"
@@ -1883,4 +2148,95 @@
       url: "https://www.inceptionlabs.ai/blog/introducing-mercury-2"
       note: "1000+ tokens/sec"
       tip: "<strong>Diffusion-based reasoning LLM.</strong> 1,009 tokens/sec on NVIDIA Blackwell — 5x faster than leading speed-optimized LLMs. 128K context. Parallel token generation instead of autoregressive. Founded by Stanford, UCLA, and Cornell researchers."
+
+# ─────────────────── TENCENT ───────────────────
+- name: Tencent
+  company: tencent
+  tagline: "Hunyuan means 'primordial chaos' — fitting for the naming"
+  children:
+    - name: Hunyuan
+      date: "Sep 2023"
+      note: "\u6DF7\u5143 = 'primordial chaos'"
+      url: "https://llm.hunyuan.tencent.com/"
+      tip: "<strong>Tencent's foundation model family.</strong> Named after a Taoist concept of undifferentiated origin. Ambitious for a language model."
+      children:
+        - name: Hunyuan T1
+          date: "2025"
+          url: "https://tencent.github.io/llm.hunyuan.T1/README_EN.html"
+          note: "'Thinker-1'"
+          tip: "<strong>Reasoning model.</strong> Originally 'Hunyuan-Thinker-1-Preview,' shortened to T1. Everyone names their reasoning model differently: o, R, Deep Think, Thinking, Magistral, T1."
+        - name: Hunyuan 2.0
+          date: "Dec 2025"
+          url: "https://technode.com/2025/12/08/tencent-releases-hunyuan-2-0-its-next-generation-ai-model/"
+          note: "406B MoE, 32B active"
+          tip: "<strong>Think and Instruct variants.</strong> 256K context. Skipped '1.x' releases — jumped from original Hunyuan straight to 2.0."
+        - name: Hunyuan 3.0
+          date: "Apr 2026"
+          url: "https://www.caixinglobal.com/2026-03-18/tencent-to-launch-hunyuan-30-in-april-build-wechat-ai-agent-102424421.html"
+          note: "led by Shunyu Yao, ex-OpenAI"
+          tip: "<strong>~30B params, agent-focused.</strong> Much smaller than 2.0 — the deliberate downscale is the story. Powers WeChat's AI agent. Built by the team behind ReAct and Tree of Thoughts."
+    - name: Hunyuan Image / Video / 3D
+      section: true
+      note: "the media constellation"
+      children:
+        - name: Hunyuan Image 3.0
+          date: "2026"
+          url: "https://wavespeed.ai/blog/posts/hunyuan-image-3-0-complete-guide-2026/"
+          note: "80B params"
+          tip: "<strong>Largest open-source text-to-image model.</strong> 80B MoE. Hunyuan Image version numbers don't track Hunyuan text version numbers. Each modality has its own version counter."
+        - name: HunyuanVideo 1.5
+          url: "https://huggingface.co/tencent/HunyuanVideo-1.5"
+          tip: "8.3B params. Runs on consumer GPUs."
+        - name: Hunyuan3D 2.1
+          url: "https://huggingface.co/tencent/Hunyuan3D-2.1"
+          tip: "PBR-material 3D asset generation. The 3D sub-family is on 2.1 while the text sub-family is on 3.0."
+        - name: HY-World 2.0
+          date: "Apr 2026"
+          url: "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0"
+          note: "open-source 3D world model"
+          tip: "<strong>First open-source 3D world model.</strong> Generates meshes, 3D Gaussian Splats, and point clouds from text, images, or video. 'HY' is the new short form."
+        - name: HY-Embodied-0.5
+          date: "Apr 2026"
+          url: "https://github.com/Tencent-Hunyuan/HY-Embodied"
+          note: "starts at 0.5"
+          tip: "<strong>Embodied foundation model for real-world agents.</strong> Version 0.5. Starting a new line at 0.5 is the new way to say 'preview but also a real release.'"
+
+# ─────────────────── BAIDU ───────────────────
+- name: Baidu
+  company: baidu
+  tagline: "ERNIE — named after a Sesame Street character, somehow"
+  children:
+    - name: ERNIE
+      date: "2019"
+      note: "Enhanced Representation through kNowledge IntEgration"
+      url: "https://ernie.baidu.com/"
+      tip: "<strong>Baidu's foundation model line.</strong> The acronym is 'Enhanced Representation through kNowledge IntEgration.' The acronym is doing heavy lifting."
+      children:
+        - name: ERNIE 3.0
+          date: "2021"
+          url: "https://ernie.baidu.com/"
+          tip: "First big scale-up. 260B params."
+        - name: ERNIE 4.0
+          date: "Oct 2023"
+          url: "https://ernie.baidu.com/"
+          tip: "Launched as 'ERNIE Bot 4.0.' The 'Bot' suffix appeared and disappeared."
+        - name: ERNIE 4.5
+          date: "2025"
+          url: "https://ernie.baidu.com/"
+          tip: "Multimodal upgrade."
+          children:
+            - name: ERNIE 4.5 21B A3B
+              url: "https://designforonline.com/ai-models/baidu-ernie-4-5-21b-a3b/"
+              note: "21B total, 3B active"
+              tip: "Compact MoE variant."
+        - name: ERNIE 5.0
+          date: "Jan 2026"
+          url: "https://www.prnewswire.com/news-releases/baidu-unveils-ernie-5-0-and-a-series-of-ai-applications-at-baidu-world-2025--ramps-up-global-push-302614531.html"
+          note: "2.4T params, <3% active"
+          tip: "<strong>Native multimodal MoE.</strong> Up to 2.4 trillion parameters with under 3% active per inference. Previewed Nov 2025, official release Jan 22 2026. Baidu claims #8 globally on text, ahead of GPT-5.1-High and Gemini-2.5-Pro."
+    - name: ERNIE Image
+      date: "Apr 2026"
+      url: "https://cntechpost.com/2026/04/15/baidu-open-sources-ernie-image-model-bringing-top-tier-rendering-consumer-gpus/"
+      note: "8B diffusion, Apache 2.0"
+      tip: "<strong>Open-sourced on Apr 15.</strong> 8B Diffusion Transformer. Runs on a 24GB consumer GPU. Lightweight Prompt Enhancer. Ships alongside ERNIE-Image-Turbo — the 'Turbo' suffix strikes again."
 
