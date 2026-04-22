@@ -347,6 +347,16 @@
           url: "https://openai.com/index/codex-for-almost-everything/"
           note: "image model, ships inside Codex"
           tip: "<strong>Image generation, lowercase-hyphenated ID.</strong> Not 'DALL·E 4.' Not 'GPT Image.' gpt-image-1.5 — the snake-case, API-style name has fully colonized product naming. Ships with the Codex super app on Apr 16."
+        - name: ChatGPT Images 2.0
+          date: "Apr 2026"
+          url: "https://thenewstack.io/chatgpt-images-20-openai/"
+          note: "API id: gpt-image-2"
+          tip: "<strong>Images that 'think' before they draw.</strong> Five days after gpt-image-1.5, OpenAI shipped gpt-image-2 — branded 'ChatGPT Images 2.0' to users. 2K resolution, aspect ratios from 3:1 to 1:3, standard + 'thinking' modes. The product is '2.0,' the API id is '2.' Two parallel names for one model."
+          children:
+            - name: gpt-image-2 thinking
+              url: "https://thenewstack.io/chatgpt-images-20-openai/"
+              note: "paid subscribers only"
+              tip: "<strong>Reasoning mode for an image model.</strong> 'Thinking' now shows up on text, code, and images. Paid-only. Stronger character consistency and multi-frame coherence."
         - name: Jukebox
           dead: true
           date: "Apr 2020"
@@ -1685,9 +1695,14 @@
           tip: "<strong>1M token context, 65K output.</strong> Always-on reasoning, native function calling. Ships as 'Preview' and 'Plus' simultaneously."
         - name: Qwen3.6-35B-A3B
           date: "Apr 2026"
-          url: "https://github.com/QwenLM/Qwen3.6"
-          note: "35B total, 3B active"
+          url: "https://huggingface.co/Qwen/Qwen3.6-35B-A3B"
+          note: "35B total, 3B active, open-weights"
           tip: "Sparse MoE. The 35B-A3B format is now standard Qwen — same spec class as Qwen3.5-35B-A3B. Two models, same shape, different version number."
+        - name: Qwen3.6-Max-Preview
+          date: "Apr 2026"
+          url: "https://artificialanalysis.ai/models/qwen3-6-max"
+          note: "closed-weights, #1 on SWE-Bench Pro"
+          tip: "<strong>Topped six coding benchmarks at launch.</strong> SWE-Bench Pro, Terminal-Bench 2.0, SkillsBench, QwenClawBench, QwenWebBench, SciCode. 1558 Elo on QwenWebBench vs 1182 for Opus 4.5. 256K context. Closed-weights — Alibaba's open-source flagship now has a closed-source flagship above it."
     - name: Media
       section: true
       children:
