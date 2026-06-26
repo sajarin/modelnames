@@ -1,3 +1,7 @@
+/**
+ * model-tree — interactive tree of AI model names.
+ * @version 1.1.0
+ */
 class ModelTree extends HTMLElement {
   constructor() {
     super();
